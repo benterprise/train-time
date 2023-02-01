@@ -1,0 +1,23 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2vmin;
+}
+
+.clock {
+  font-size: 7vmax;
+  line-height: 7vmax;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 15px 0px;
+}

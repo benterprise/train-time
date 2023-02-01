@@ -1,0 +1,84 @@
+.stations {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.station {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  justify-content: center;
+  margin: 10px 0px;
+  .station-info {
+    display: flex;
+    border: 1px solid white;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 2.5vmax;
+    line-height: 2.5vmax;
+    .station-name, .station-info-times {
+      display: flex;
+      flex: 1 1 0;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.station-arrivals {
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrivals-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  border: 1px solid white;
+  border-top: 0px;
+  .direction {
+    font-size: 2.5vmax;
+    line-height: 2.5vmax;
+    padding: 1vmax 0px;
+    border-bottom: 1px solid white;
+  }
+  .no-arrivals {
+    padding: 5px 0px;
+  }
+}
+
+.arrivals-list {
+  display: flex;
+  flex-direction: column;
+  .arrival-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    .arrival-time, .leave-time {
+      flex: 1 1 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      span {
+        white-space: nowrap;
+        margin: 0px 5px;
+      }
+    }
+  }
+  .arrival-item:first-child {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-bottom: 0px;
+    .arrival-time, .leave-time {
+      border-color: black;
+    }
+  }
+}
+
+
+
